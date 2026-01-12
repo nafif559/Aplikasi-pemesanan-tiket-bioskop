@@ -220,8 +220,6 @@ public class Studio extends javax.swing.JFrame {
         c1 = new javax.swing.JButton();
         b1 = new javax.swing.JButton();
         a1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        lbltotal = new javax.swing.JLabel();
         btnCetak = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -803,18 +801,6 @@ public class Studio extends javax.swing.JFrame {
         getContentPane().add(a1);
         a1.setBounds(550, 485, 50, 40);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Total :");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(380, 560, 100, 20);
-
-        lbltotal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        lbltotal.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lbltotal.setText("nominal");
-        getContentPane().add(lbltotal);
-        lbltotal.setBounds(380, 585, 100, 20);
-
         btnCetak.setText("Cetak Tiket");
         btnCetak.setPreferredSize(new java.awt.Dimension(110, 50));
         btnCetak.addActionListener(new java.awt.event.ActionListener() {
@@ -826,6 +812,7 @@ public class Studio extends javax.swing.JFrame {
         btnCetak.setBounds(490, 560, 110, 50);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void i2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_i2ActionPerformed
@@ -852,7 +839,7 @@ public class Studio extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(this, "Tiket berhasil dicetak!");
             new Cetak_tiket().setVisible(true);
-            this.dispose(); // lanjut ke form cetak tiket jika ada
+            this.dispose(); // lanjut ke form cetak tiket 
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Gagal simpan tiket: " + e.getMessage());
@@ -980,7 +967,5 @@ public class Studio extends javax.swing.JFrame {
     private javax.swing.JButton j7;
     private javax.swing.JButton j8;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel lbltotal;
     // End of variables declaration//GEN-END:variables
 }

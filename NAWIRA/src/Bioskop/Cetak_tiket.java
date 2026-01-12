@@ -226,6 +226,7 @@ public class Cetak_tiket extends javax.swing.JFrame {
         jLabel8.setBounds(20, 240, 70, 20);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

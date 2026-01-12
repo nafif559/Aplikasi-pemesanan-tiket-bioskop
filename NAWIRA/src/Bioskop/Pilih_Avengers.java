@@ -419,7 +419,7 @@ public class Pilih_Avengers extends javax.swing.JFrame {
                     .addComponent(rbsabtu))
                 .addGap(59, 59, 59)
                 .addComponent(jLabel5)
-                .addGap(26, 26, 26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jamke1)
                     .addComponent(jamke2)
@@ -442,6 +442,7 @@ public class Pilih_Avengers extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

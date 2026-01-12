@@ -95,6 +95,7 @@ public class Jumlah_tiket extends javax.swing.JFrame {
         btnLanjut.setBounds(130, 130, 110, 40);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLanjutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLanjutActionPerformed
